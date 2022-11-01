@@ -1,0 +1,206 @@
+body{
+    background-color: black;
+}
+header{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 1rem 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: red;
+    color: var(--red);
+    letter-spacing: .1rem;
+}
+header .logo{
+    float: left;
+    margin-left: all;
+    color: #fff;;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    0% {color: red;}
+    25% {color: blue;}
+    50% {color: green;}
+    100% {color: yellow;}
+
+}
+
+header .logo i{
+    color: var(--red);
+
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: whitesmoke;
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: whitesmoke;
+    background: red;
+}
+p{
+    color: whitesmoke;
+}
+h1{
+    color: whitesmoke;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.slide{
+   
+    min-height: 100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    padding:2rem 9%;
+}
+
+
+.slide .content{
+    width:50rem;
+}
+
+.slide .content h3{
+    font-size: 6rem;
+    color: #fff;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.slide .content p{
+    line-height: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.anime{
+    padding:5rem;
+}
+
+.anime .box{
+    width: 299px;
+    height:168px;
+}
+
+.anime .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.anime .content P{
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none;
+
+}
+.split{
+    display:grid;
+    height: 70vh;
+    grid-template-columns: auto auto auto auto ;
+}
+.split2{
+    display:grid;
+    height: 70vh;
+    grid-template-columns: auto auto auto auto ;
+}
+.split3{
+    display:grid;
+    height: 70vh;
+    grid-template-columns: auto auto auto auto ;
+}
+u{
+    text-decoration-color: white;
+}
+h3{
+    color: whitesmoke;
+}
+img{
+    position: relative;
+    transform: translate(0%, -40%);
+    animation: mymove 5s infinite ease-in-out;
+}
+@keyframes mymove {
+    0%   {transform: rotate(3deg);}
+    100%   {transform: rotate(-3deg);}
+  }
